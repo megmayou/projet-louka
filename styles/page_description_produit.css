@@ -1,0 +1,48 @@
+/** MAIN **/
+
+.main {
+    display: flex;
+}
+
+.div-photo-produit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    min-width: 50%;
+    
+}
+.size-img {
+
+    width: 100%;
+    height: 400px;
+}
+
+.div-description-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+    min-width: 50%;
+    top: 0;
+}
+
+.design-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+    box-shadow: 4px 4px 4px 2px grey;
+    border-radius: 5px;
+}
+
+.svg-size {
+    margin-right: 50%;
+}
+
+.div-design {
+    
+    border: solid rgba(85, 48, 101, 0.818);
+
+}

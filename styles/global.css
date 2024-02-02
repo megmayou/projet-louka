@@ -1,4 +1,4 @@
-
+@import url("./page_description_produit.css");
 
 /** HEADER **/
 
@@ -7,9 +7,7 @@ header {
     div { 
         display: flex;
         justify-content: center ;
-        border-bottom: solid rgba(85, 48, 101, 0.818);
-        
-        
+        border-bottom: solid rgba(85, 48, 101, 0.818);        
     }
 
     menu {
@@ -24,7 +22,7 @@ header {
     }
 } 
 
-header div img {
+.img-header-size {
     width: 200 px;
     height: 200 px;
 }
