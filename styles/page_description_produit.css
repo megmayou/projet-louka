@@ -7,10 +7,7 @@
 .div-photo-produit {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 50%;
-    min-width: 50%;
-    
+    justify-content: center;   
 }
 .size-img {
 
@@ -19,7 +16,9 @@
 }
 
 .div-description-product {
+    position: sticky;
     display: flex;
+    height: fit-content;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

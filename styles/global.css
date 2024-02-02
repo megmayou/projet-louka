@@ -1,5 +1,9 @@
 @import url("./page_description_produit.css");
 
+body {
+    margin: 0;
+}
+
 /** HEADER **/
 
 header {
@@ -20,11 +24,31 @@ header {
         font-size: 2rem;
         padding: 20px;
     }
+
+    .top-header {
+        display: flex;
+        align-items: center;
+
+        img, a {
+            margin-right: auto;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 1.8rem;
+
+            &:visited {
+                color: black;
+            }
+        }
+    }
 } 
 
 .img-header-size {
-    width: 200 px;
-    height: 200 px;
+    width: 60px;
+    height: 60px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem
 }
 
 /** MAIN **/
