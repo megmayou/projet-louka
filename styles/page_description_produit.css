@@ -3,6 +3,7 @@
 .main {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 
 }
 
@@ -29,12 +30,18 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .div-description-product {
+        width: 100%;
+        min-width: 100%;
+    }  
 }
 
 /* SELECT */
-
 .select {
-    font-family: cursive , sans-serif;
     border-radius: 24px;
     border-style: none;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
@@ -52,7 +59,7 @@
   align-items: center;
   appearance: none;
   background-color: #fff;
-  border-radius: 24px;
+  border-radius: 8px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
@@ -60,7 +67,6 @@
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: cursive , sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 48px;

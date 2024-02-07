@@ -1,6 +1,8 @@
 @import url("./page_description_produit.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
+    height: 100dvh;
     margin: 0;
     font-family: cursive , sans-serif;
 }
@@ -9,9 +11,9 @@ body {
 
 header {
 
-    div { 
+    div {
         display: flex;
-        justify-content: center ;
+        justify-content: center;
         border-bottom: solid rgba(85, 48, 101, 0.818);
     }
 
@@ -22,15 +24,26 @@ header {
     }
 
     menu li {
-        font-size: 1.6rem;
-        padding: 20px;
+        padding: 18px; 
+
+        a {
+            font-size: 18px !important;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        menu li {
+            padding: 12px; 
+        }
+        
     }
 
     .top-header {
         display: flex;
         align-items: center;
 
-        img, a {
+        img,
+        a {
             margin-right: auto;
         }
 
@@ -44,12 +57,18 @@ header {
             }
         }
     }
-} 
+}
 
 .img-header-size {
     width: 60px;
     height: 60px;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 1px 1px 1px darkblue;
+    margin-left: 0.8rem;
+    margin-block: 0.4rem;
+    margin-bottom: 0;
 }
 
 /** MAIN **/
@@ -71,7 +90,7 @@ main {
 
 main a img {
     width: 300px;
-    height: 300px ;
+    height: 300px;
 }
 
 div {
@@ -85,5 +104,37 @@ div {
         margin: 0.2rem;
 
     }
-    
+
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    margin-top: 3rem;
+}
+
+.splide__slide img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.splide .splide__pagination {
+    margin-bottom: 1rem;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #56308d !important;
+}
+
+.splide__pagination__page {
+    background: black !important;
+}
+
+img {
+    border-radius: 8px;
+}
+
+p {
+    border-radius: 6px;
 }

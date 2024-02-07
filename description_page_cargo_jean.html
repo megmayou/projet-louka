@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="mettre une desciption">
-    <meta name="keywords" content="mettre des mots clés du site">
-    <link rel="stylesheet" href="./styles/global.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="mettre une desciption" />
+    <meta name="keywords" content="mettre des mots clés du site" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <title>CFACOLLECT</title>
-</head>
-<header>
-    <div class="top-header">
-        <img src="./assets/logo_entreprise.png" alt="logo du site à décrire quand on l'image sera la bonne" class="img-header-size">
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <a href="/"
+          ><img
+            src="./assets/logo_entreprise.png"
+            alt="logo du site à décrire quand on l'image sera la bonne"
+            class="img-header-size"
+        /></a>
         <a href="/"> CFACOLLECT </a>
-    </div>
-    <div>
-        <menu>
-            <li>Nouveautés</li>
-            <li>Vêtements</li>
-            <li>Accessoires</li>
-        </menu>
-    </div>
-</header>
-<main class="main">
-<div class="div-photo-produit">
-    <div> <img src="./assets/images/cargo_style_jean_homme.jpg" alt="photo cargo homme noir de profil" class="size-img"></div>
-    <div> <img src="./assets/cargo-jean/cargo-jean-cote.webp" alt="photo cargo noir arrière" class="size-img"> </div>
-    <div> <img src="./assets/cargo-jean/cargo-jean-haut.webp" alt="photo cargo ceinture avec lacet" class="size-img"> </div>
-    <div> <img src="./assets/cargo-jean/cargo-jean-tenu.webp" alt="photo idée tenu avec cargo jean" class="size-img"> </div>
-</div>
-<div class="div-description-product">
-    <div> 
-        <p> Homme pantalon cargo jean avec poches à rabat et ceinture en lacet  </p>
-    </div>
-    <div>
-        <p> 30,70€ </p>
-    </div>
+      </div>
       <div>
-        <select name="size" class="select" >
+        <menu>
+          <li>
+            <a
+              style="color: black; text-underline-offset: 4px"
+              href="/description_page_cargo_noir.html"
+              >Pantalon noir</a
+            >
+          </li>
+          <li>
+            <a
+              style="color: black; text-underline-offset: 4px"
+              href="/description_page_cargo_jean.html"
+              >Pantalon jean</a
+            >
+          </li>
+          <li>
+            <a
+              style="color: black; text-underline-offset: 4px"
+              href="/description_page_sweat_beige.html"
+              >Sweat beige</a
+            >
+          </li>
+        </menu>
+      </div>
+    </header>
+    <main class="main">
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"> <img
+                  src="./assets/cargo-jean/cargo-jean-cote.webp"
+                  alt="photo cargo homme noir de profil"
+                  class="size-img"
+                /></li>
+                <li class="splide__slide"> <img
+                  src="./assets/cargo-jean/cargo-jean-haut.webp"
+                  alt="photo cargo homme noir de profil"
+                  class="size-img"
+                /></li>
+                <li class="splide__slide"> <img
+                  src="./assets/cargo-jean/cargo-jean-tenu.webp"
+                  alt="photo cargo homme noir de profil"
+                  class="size-img"
+                /></li>
+              </ul>
+            </div>
+          </section>
+      <div class="div-description-product">
+        <h3 style="margin-bottom: 1rem">
+          Homme pantalon cargo avec cordon de serrage et poches à rabat - Noir
+        </h3>
+        <div
+          style="
+            width: fit-content;
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+            margin-left: 0;
+            border: 1px solid black;
+            padding-right: 0.6rem;
+          "
+        >
+          <select name="size" style="padding: 0.8rem; border: 0">
             <option value="select">Sélectionner votre taille</option>
             <option value="XXS">XXS</option>
             <option value="XS">XS</option>
@@ -45,13 +99,35 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-        </select>
-    </div>
-    <div >
-        <button class="button-17"> Ajouter au panier</button>
-    </div>
-    
-</div>
+          </select>
+        </div>
+        <p
+          style="
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: extra-bold;
+            border: 1px solid gray;
+            padding: 0.2rem 0.8rem;
+            border-style: dashed;
+          "
+        >
+          47,20€
+        </p>
+        <button style="margin-top: 1rem" class="button-17">
+          Ajouter au panier
+        </button>
+      </div>
+    </main>
+    <footer>Projet étudiant réalisé par xxx</footer>
 
-</main>
-<footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          perPage: 1,
+        });
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>
