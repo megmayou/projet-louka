@@ -2,7 +2,15 @@
 
 .main {
     display: flex;
+    flex-direction: row;
+
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+  }
 
 .div-photo-produit {
     display: flex;
@@ -16,15 +24,11 @@
 }
 
 .div-description-product {
-    position: sticky;
     display: flex;
-    height: fit-content;
+    width: 50%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 50%;
-    min-width: 50%;
-    top: 0;
 }
 
 /* SELECT */
