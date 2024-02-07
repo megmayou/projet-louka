@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: cursive , sans-serif;
 }
 
 /** HEADER **/
@@ -11,7 +12,7 @@ header {
     div { 
         display: flex;
         justify-content: center ;
-        border-bottom: solid rgba(85, 48, 101, 0.818);        
+        border-bottom: solid rgba(85, 48, 101, 0.818);
     }
 
     menu {
@@ -21,7 +22,7 @@ header {
     }
 
     menu li {
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 20px;
     }
 
@@ -59,6 +60,7 @@ main {
         justify-content: space-around;
         align-items: center;
         margin: 1rem;
+        font-size: 1rem;
     }
 
     h1 {
